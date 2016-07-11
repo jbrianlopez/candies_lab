@@ -1,7 +1,9 @@
 /* globals describe it before */
 const expect = require('chai').expect;
 const supertest = require('supertest');
+const app = require('../app');
 const api = supertest('http://localhost:3000');
+
 
 describe('GET /candies', () => {
   it('should return a 200 response', (done) => {
